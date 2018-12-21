@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import argparse
+import tvsleep
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('minutes',
+                        help='length of time to wait before putting computer to sleep',
+                        type=int)
+    parser.add_argument('-v',
+                        '--verbose',
+                        help='display extra info during run',
+                        action='store_true')
+    args = parser.parse_args()
+
+    tvsleep.main(args.minutes, verbose=args.verbose)
