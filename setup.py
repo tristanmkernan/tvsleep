@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='tvsleep',
-      version='0.3',
+      version='0.4',
       description='put your computer to sleep after a delay',
       long_description=readme(),
       long_description_content_type='text/markdown',

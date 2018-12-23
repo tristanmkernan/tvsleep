@@ -22,7 +22,7 @@ $ pip3 install tvsleep
 
 ```sh
 $ tvsleep -h
-usage: tvsleep [-h] [-v] minutes
+usage: tvsleep [-h] [-v] [--gui] minutes
 
 positional arguments:
   minutes        length of time to wait before putting computer to sleep
@@ -30,6 +30,9 @@ positional arguments:
 optional arguments:
   -h, --help     show this help message and exit
   -v, --verbose  display extra info during run
+  --gui          open the gui
+
+$ tvsleep --gui 42 # opens the GUI with preset 42 minutes
 
 $ tvsleep -v 42  # put the computer to sleep in 42 minutes, with countdown
 ```

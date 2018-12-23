@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+
 import tvsleep
 
 if __name__ == '__main__':
@@ -12,6 +13,9 @@ if __name__ == '__main__':
                         '--verbose',
                         help='display extra info during run',
                         action='store_true')
+    parser.add_argument('--gui',
+                        help='open the gui',
+                        action='store_true')
     args = parser.parse_args()
 
-    tvsleep.main(args.minutes, verbose=args.verbose)
+    tvsleep.main(args.minutes, verbose=args.verbose, gui=args.gui)
