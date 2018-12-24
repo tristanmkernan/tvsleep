@@ -13,7 +13,7 @@ def main(minutes_to_sleep, verbose=False, gui=False):
     if gui:
         from .gui import main_gui_loop
 
-        main_gui_loop(minutes_to_sleep, verbose=verbose)
+        main_gui_loop(minutes_to_sleep)
     else:
         for elapsed in range(minutes_to_sleep):
             if verbose:

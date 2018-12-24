@@ -2,6 +2,8 @@
 
 Restores that glorious missing feature of televisions to the computer: a sleep timer!
 
+![main](screenshots/gui.png?raw=true)
+
 ## Motivation
 
 To use when falling asleep with Netflix or Twitch streaming.
